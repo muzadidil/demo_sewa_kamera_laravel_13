@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id" class="h-full">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title id="page-title">Produk - Rental Kamera (Demo)</title>
+<meta name="description" content="Demo tampilan halaman produk sewa alat foto &amp; video. Halaman statis untuk contoh portofolio, tidak terhubung ke server sungguhan.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><text y=%2220%22 font-size=%2220%22>📷</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: { 50:'#eff6ff',100:'#dbeafe',200:'#bfdbfe',300:'#93c5fd',400:'#60a5fa',500:'#3b82f6',600:'#2563eb',700:'#1d4ed8',800:'#1e40af',900:'#1e3a8a', on:'#ffffff' },
+          canvas: '#f3f5f9',
+          ink: '#1f2937',
+        },
+        fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+      },
+    },
+  };
+</script>
+</head>
+<body class="min-h-full bg-canvas font-sans text-ink antialiased">
+
+<div class="sticky top-0 z-40 bg-ink py-1.5 text-center text-xs font-medium text-white/90">
+  <iconify-icon icon="heroicons:eye" class="-mt-0.5 inline-block align-middle"></iconify-icon>
+  Ini demo tampilan produk (contoh portofolio) &middot; booking &amp; login tidak aktif
+</div>
+
+<header class="sticky top-6 z-30 border-b border-slate-200/70 bg-white/90 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
+    <a href="index.html" class="flex items-center gap-2.5">
+      <span class="flex size-9 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 text-white shadow-sm">
+        <iconify-icon icon="heroicons:camera" width="20"></iconify-icon>
+      </span>
+      <span class="text-[15px] font-bold tracking-tight text-slate-900">Rental Kamera</span>
+    </a>
+    <nav class="flex items-center gap-1 text-sm font-medium text-slate-600 sm:gap-2">
+      <a href="index.html" class="hidden rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900 sm:inline-block">Katalog</a>
+      <a href="#" data-inert class="hidden rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900 sm:inline-block">Cek Booking</a>
+      <a href="#" data-inert class="hidden rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900 sm:inline-block">Antrian</a>
+      <a href="#" data-inert class="rounded-lg px-3 py-2 text-slate-500 transition hover:bg-slate-100 hover:text-slate-900">Masuk Petugas</a>
+    </nav>
+  </div>
+</header>
+
+<main class="mx-auto max-w-6xl px-4 py-8 sm:px-6" id="content">
+  <!-- diisi oleh JS -->
+</main>
+
+<footer class="mt-10 border-t border-slate-200 bg-white">
+  <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-3">
+    <div>
+      <div class="flex items-center gap-2.5">
+        <span class="flex size-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 text-white">
+          <iconify-icon icon="heroicons:camera" width="16"></iconify-icon>
+        </span>
+        <span class="font-bold text-slate-900">Rental Kamera</span>
+      </div>
+      <p class="mt-3 text-sm leading-relaxed text-slate-500">Sewa kamera, lensa, dan perlengkapan produksi</p>
+    </div>
+    <div>
+      <p class="text-xs font-semibold tracking-wider text-slate-400 uppercase">Tautan</p>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li><a href="index.html" class="text-slate-600 hover:text-brand-700">Katalog alat</a></li>
+        <li><a href="#" data-inert class="text-slate-600 hover:text-brand-700">Cek status booking</a></li>
+        <li><a href="#" data-inert class="text-slate-600 hover:text-brand-700">Ambil nomor antrian</a></li>
+        <li><a href="#" data-inert class="text-slate-600 hover:text-brand-700">Masuk sebagai petugas</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-xs font-semibold tracking-wider text-slate-400 uppercase">Hubungi Kami</p>
+      <ul class="mt-3 space-y-2 text-sm text-slate-600">
+        <li class="flex items-start gap-2"><iconify-icon icon="heroicons:map-pin" width="16" class="mt-0.5 shrink-0 text-slate-400"></iconify-icon><span>Contoh alamat usaha, Kota Contoh</span></li>
+        <li class="flex items-center gap-2"><iconify-icon icon="heroicons:chat-bubble-left-right" width="16" class="shrink-0 text-slate-400"></iconify-icon><a href="#" data-inert class="hover:text-brand-700">0812-xxxx-xxxx (contoh)</a></li>
+        <li class="flex items-center gap-2"><iconify-icon icon="heroicons:clock" width="16" class="shrink-0 text-slate-400"></iconify-icon><span>Setiap hari, 09.00 - 21.00 WIB</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-slate-100 py-4 text-center text-xs text-slate-400">
+    Demo tampilan &middot; dibuat sebagai contoh portofolio, bukan situs bisnis aktif.
+  </div>
+</footer>
+
+<a href="#" data-inert data-msg="Ini demo tampilan — chat WhatsApp tidak aktif." class="fixed bottom-5 right-5 z-40 flex items-center gap-2 rounded-full bg-emerald-600 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-600/30 transition hover:bg-emerald-700">
+  <iconify-icon icon="heroicons:chat-bubble-left-right" width="18"></iconify-icon>
+  <span class="hidden sm:inline">Chat WhatsApp</span>
+</a>
+
+<script src="assets/js/data.js"></script>
+<script>
+  const params = new URLSearchParams(location.search);
+  const product = productOf(params.get('slug')) || PRODUCTS[0];
+  const cat = categoryOf(product.category);
+  document.getElementById('page-title').textContent = product.name + ' - Rental Kamera (Demo)';
+
+  function availabilityStrip(seed) {
+    const days = [];
+    const base = new Date();
+    for (let i = 0; i < 14; i++) {
+      const d = new Date(base);
+      d.setDate(base.getDate() + i);
+      // Pola semu-acak yang konsisten per produk, bukan data sewa sungguhan.
+      const free = (seed + i * 7) % 11 < 2 ? 0 : Math.max(1, (seed + i * 3) % product.readyUnits + 1);
+      days.push({ date: d, free });
+    }
+    return days;
+  }
+
+  function seedOf(slug) {
+    let h = 0;
+    for (const ch of slug) h = (h * 31 + ch.charCodeAt(0)) % 97;
+    return h;
+  }
+
+  const checklist = (CHECKLISTS[product.category] || []);
+  const dayNames = ['Min', 'Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab'];
+
+  document.getElementById('content').innerHTML = `
+    <nav class="flex items-center gap-1.5 text-sm text-slate-500">
+      <a href="index.html" class="hover:text-brand-700">Katalog</a>
+      <iconify-icon icon="heroicons:chevron-right" width="14" class="text-slate-300"></iconify-icon>
+      <a href="index.html" class="hover:text-brand-700">${cat.name}</a>
+      <iconify-icon icon="heroicons:chevron-right" width="14" class="text-slate-300"></iconify-icon>
+      <span class="truncate font-medium text-slate-700">${product.name}</span>
+    </nav>
+
+    <div class="mt-4 grid gap-8 lg:grid-cols-5">
+      <div class="lg:col-span-2">
+        <div class="aspect-[4/3] overflow-hidden rounded-2xl bg-gradient-to-br from-slate-100 to-slate-200 shadow-sm ring-1 ring-slate-200">
+          ${product.image
+            ? `<img src="${product.image}" alt="${product.name}" class="size-full object-cover">`
+            : `<div class="flex size-full items-center justify-center text-brand-700/20"><iconify-icon icon="heroicons:${cat.icon}" width="96"></iconify-icon></div>`}
+        </div>
+
+        ${checklist.length ? `
+        <div class="mt-5 rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
+          <p class="flex items-center gap-1.5 text-sm font-semibold text-slate-800">
+            <iconify-icon icon="heroicons:clipboard-document-check" width="16" class="text-brand-600"></iconify-icon> Kelengkapan yang didapat
+          </p>
+          <ul class="mt-3 grid grid-cols-2 gap-2.5 text-sm text-slate-600">
+            ${checklist.map(([label, qty]) => `
+              <li class="flex items-center gap-1.5"><iconify-icon icon="heroicons:check-circle" width="16" class="shrink-0 text-emerald-500"></iconify-icon> ${label}${qty > 1 ? ` &times;${qty}` : ''}</li>
+            `).join('')}
+          </ul>
+        </div>` : ''}
+      </div>
+
+      <div class="lg:col-span-3">
+        <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+          <p class="flex items-center gap-1.5 text-sm font-semibold text-brand-700">
+            <iconify-icon icon="heroicons:${cat.icon}" width="16"></iconify-icon> ${cat.name}
+          </p>
+          <h1 class="mt-1 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">${product.name}</h1>
+          <p class="mt-0.5 text-sm text-slate-500">${product.brand}</p>
+
+          <div class="mt-4 flex flex-wrap items-end justify-between gap-3 border-t border-slate-100 pt-4">
+            <div>
+              <p class="text-3xl font-bold text-brand-700">${rupiah(product.price)} <span class="text-sm font-normal text-slate-500">/ hari</span></p>
+              <p class="mt-1 flex items-center gap-1 text-sm font-medium text-emerald-600">
+                <span class="size-1.5 rounded-full bg-emerald-500"></span> ${product.readyUnits} unit siap disewa
+              </p>
+            </div>
+            <a href="#" data-inert data-msg="Ini demo tampilan — booking tidak diproses sungguhan." class="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-5 py-3 text-sm font-semibold text-brand-on shadow-sm shadow-brand-600/30 transition hover:bg-brand-700">
+              <iconify-icon icon="heroicons:calendar-days" width="18"></iconify-icon> Booking Sekarang
+            </a>
+          </div>
+
+          <p class="mt-5 whitespace-pre-line border-t border-slate-100 pt-4 text-sm leading-relaxed text-slate-600">${product.description}</p>
+        </div>
+
+        <div class="mt-5 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+          <p class="flex items-center gap-1.5 text-sm font-semibold text-slate-800">
+            <iconify-icon icon="heroicons:calendar-days" width="16" class="text-brand-600"></iconify-icon> Ketersediaan 14 hari ke depan
+          </p>
+          <div class="mt-3 flex gap-2 overflow-x-auto pb-2">
+            ${availabilityStrip(seedOf(product.slug)).map(({ date, free }) => `
+              <div class="flex w-14 shrink-0 flex-col items-center rounded-xl px-1 py-2.5 text-center ${free > 0 ? 'bg-emerald-50 text-emerald-700' : 'bg-rose-50 text-rose-600'}">
+                <span class="text-[10px] font-medium uppercase tracking-wide text-slate-400">${dayNames[date.getDay()]}</span>
+                <span class="text-base font-bold">${String(date.getDate()).padStart(2, '0')}</span>
+                <span class="text-[10px] font-medium">${free > 0 ? free + ' unit' : 'Penuh'}</span>
+              </div>
+            `).join('')}
+          </div>
+          <p class="mt-3 text-xs text-slate-400">Hijau = masih tersedia, merah = penuh pada tanggal tersebut. Data contoh, bukan jadwal sewa sungguhan.</p>
+        </div>
+      </div>
+    </div>
+  `;
+
+  inert('[data-inert]', 'Ini demo tampilan — fitur ini tidak aktif.');
+  document.querySelectorAll('[data-msg]').forEach((el) => {
+    el.addEventListener('click', (e) => { e.preventDefault(); demoToast(el.dataset.msg); });
+  });
+</script>
+</body>
+</html>
